@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "Futura";
+  src: url("futura-std-medium-condensed.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Impact";
+  src: url("impact.ttf") format("truetype");
+}
+
+:root {
+  --main-green: #c0ef27;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Impact", sans-serif;
+  background-color: var(--main-green);
+  padding: 1rem 2rem;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .instagram-icon {
+  height: 1.5rem;
+}
+
+#explain {
+  margin: 4rem 150px;
+}
+
+#explain h2 {
+  font-size: 48px;
+  max-width: 450px;
+}
+
+#event-details {
+  display: flex;
+}
+
+#event-details div {
+  display: flex;
+  align-items: center;
+  font-family: "Futura", sans-serif;
+  font-size: 32px;
+  border: 1px solid black;
+  border-right: none;
+  padding: 10px;
+}
+
+#event-details div:last-child {
+  border-right: 1px solid black;
+}
+
+#event-details #address {
+  flex: 1;
+}
+
+#event-details .internet-icon {
+  height: 32px;
+}
+
+#event-details .important-link {
+  text-decoration: none;
+  font-family: impact;
+  color: black;
+}
+
+#event-details .important-link:hover {
+  text-decoration: underline;
+}
+
+#main-image-box {
+  margin-top: 1rem;
+  max-width: 100%;
+}
+
+#main-image-box img {
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 0rem 1rem;
+}
+
+footer #email {
+  text-decoration: none;
+  font-family: "Futura", sans-serif;
+  color: black;
+  font-size: 24px;
+}
+
+footer #email:hover {
+  text-decoration: underline;
+}
