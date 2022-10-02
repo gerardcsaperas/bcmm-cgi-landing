@@ -17,9 +17,16 @@
   padding: 0;
 }
 
+html {
+  background-color: var(--main-green);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 body {
   font-family: "Impact", sans-serif;
-  background-color: var(--main-green);
+  max-width: 1280px;
   padding: 1rem 2rem;
   margin: 0;
 }
@@ -27,10 +34,16 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+header a {
+  display: flex;
 }
 
 header .instagram-icon {
-  height: 1.5rem;
+  height: 39px;
+  margin-top: -2px;
 }
 
 #explain {
@@ -87,6 +100,10 @@ header .instagram-icon {
   width: 100%;
 }
 
+#v-image {
+  display: none;
+}
+
 footer {
   text-align: center;
   padding: 2rem 0rem 1rem;
@@ -101,4 +118,73 @@ footer #email {
 
 footer #email:hover {
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  header .instagram-icon {
+    height: auto;
+    margin-top: -2px;
+  }
+
+  #h-image {
+    display: none;
+  }
+
+  #v-image {
+    display: block;
+  }
+
+  #explain {
+    margin: 0;
+  }
+
+  #explain h2 {
+    font-size: 42px;
+    max-width: 400px;
+    padding: 1rem 1rem 1rem 2rem;
+  }
+
+  #event-details div {
+    padding: 5px;
+    font-size: 20px;
+  }
+
+  #event-details .internet-icon {
+    height: 20px;
+  }
+
+  footer {
+    padding: 1rem;
+  }
+
+  footer #email {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #event-details div#internet-icon-box {
+    display: none;
+  }
+
+  #explain h2 {
+    font-size: 26px;
+    max-width: 250px;
+    padding: 1rem 1rem 1rem 2rem;
+  }
+
+  #event-details div {
+    font-size: 14px;
+  }
+
+  footer #email {
+    font-size: 12px;
+  }
 }
